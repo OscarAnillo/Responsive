@@ -11,7 +11,7 @@ h1 {
   font-size: 2rem;
   color: #143774;
   margin: 0;
-  border: 1px solid red;
+
 
 }
 
@@ -26,11 +26,23 @@ h1 {
 
 /* Layouts */
 
+.container {
+  width: 90%;
+  max-width: 900px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 header {
-  text-align: center;
+
   background: #f8f8f8;
   padding: 2em 0;
-  border: 1px solid red;
+
 }
 
 /* Navigation */
@@ -40,11 +52,11 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
+
 
 }
 nav li {
-  margin: 0 1em;
+  margin-left: 2em;
 
 }
 
