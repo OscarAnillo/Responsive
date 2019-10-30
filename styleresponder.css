@@ -29,13 +29,20 @@ h1 {
 .container {
   width: 90%;
   max-width: 900px;
-  border: 1px solid red;
   margin: 0 auto;
 }
 .container-nav {
   display: flex;
   justify-content: space-between;
 
+}
+@media (max-width: 600px){
+    .container-nav {
+      flex-direction: column;
+    }
+    header {
+      text-align: center;
+    }
 }
 
 header {
@@ -80,4 +87,12 @@ nav a:focus {
 
 .current-page:hover {
   color: #707070;
+}
+@media (max-width: 600px){
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: .5em 0;
+  }
 }
