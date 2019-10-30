@@ -22,11 +22,17 @@ h1 {
   margin: 0
 }
 
+
+
+/* Layouts */
+
 header {
   text-align: center;
   background: #f8f8f8;
   padding: 2em 0;
 }
+
+/* Navigation */
 
 nav ul {
   list-style: none;
@@ -42,11 +48,22 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #707070;
   font-weight: 700;
+  color: #707070;
+  padding: .25em;
+
 }
 
 nav a:hover,
 nav a:focus {
   color: #1792d2;
+}
+
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
 }
